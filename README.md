@@ -12,11 +12,11 @@
   - The JSON File will be located under `ufo_sightings_within_range` folder.
 
 ## Post request to add individual ufo sighting
-  - Make a Post request to `http://localhost:5000/api/v01/ufo_sightings` with params in the body.
+  - Make a Post request to `http://localhost:3000/api/v01/ufo_sightings` with params in the body.
   - You will get back the ufo_sighting record in json.
 
 ## JSON of sightings within 1500 kilometers of the hotspots
-  - Make a Get request to `http://localhost:5000/api/v01/ufo_sightings`.
+  - Make a Get request to `http://localhost:3000/api/v01/ufo_sightings`.
   - You will get back the response in json.
 
 ## Technologies used
