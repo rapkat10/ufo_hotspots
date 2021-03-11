@@ -32,7 +32,7 @@
   - `ufo_hotspots`
   - `ufo_sightings`
 
-## challenges
+## Challenges
   - Docker
 
 ## Next steps to finish the challenge
