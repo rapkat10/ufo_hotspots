@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   namespace :api do
     namespace :v01 do
       resources :ufo_sightings, only: %i[create index], defaults: { format: :json }
+      resources :ufo_hotspots, only: %i[index], defaults: { format: :json }
     end
   end
 

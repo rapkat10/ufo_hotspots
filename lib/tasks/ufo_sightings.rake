@@ -47,9 +47,10 @@ namespace :ufo_sightings do
     rad_per_deg = Math::PI / 180
     radius_km = 6371 # Earth radius in kilometers
     ufo_sightings_within_range = {}
-    UfoHotspot.all.each { |ufo_hotspot| ufo_sightings_within_range[ufo_hotspot.name] = [] }
+    ufo_hotspots = UfoHotspot.all
+    ufo_hotspots.each { |ufo_hotspot| ufo_sightings_within_range[ufo_hotspot.name] = [] }
 
-    UfoHotspot.all.each do |ufo_hotspot|
+    ufo_hotspots.each do |ufo_hotspot|
       UfoSighting.all.each do |ufo_sighting|
         lat1, lat2 = ufo_hotspot.latitude.to_i, ufo_sighting.latitude.to_i # east is +, west is -
         lon1, lon2 = ufo_hotspot.longitude.to_i, ufo_sighting.longitude.to_i

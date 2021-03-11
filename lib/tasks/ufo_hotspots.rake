@@ -10,20 +10,9 @@ namespace :ufo_hotspots do
       "Disney World’s Magic Kingdom": {latitude: '28.404010', longitude: '-81.576900'},
       "Pop's Soda Bottle": {latitude: '35.658340', longitude: '-97.335490'}
     }
-
     UfoHotspot.destroy_all
-
-    ufo_hotspots.each do |k, v|
-      UfoHotspot.create(
-        name: k,
-        latitude: v[:latitude],
-        longitude: v[:longitude]
-      )
-    end
-
-    UfoHotspot.all.each do |ufo_hotspot|
-      puts "#{ufo_hotspot.name}: #{ufo_hotspot.attributes}".yellow
-    end
+    ufo_hotspots.each { |k, v| UfoHotspot.create(name: k, latitude: v[:latitude], longitude: v[:longitude]) }
+    UfoHotspot.all.each { |ufo_hotspot| puts "#{ufo_hotspot.name}: #{ufo_hotspot.attributes}".yellow }
   end
 
 end

@@ -33,8 +33,6 @@ GEM
       activemodel (= 5.2.4.5)
       activesupport (= 5.2.4.5)
       arel (>= 9.0)
-    activerecord-import (1.0.8)
-      activerecord (>= 3.2)
     activestorage (5.2.4.5)
       actionpack (= 5.2.4.5)
       activerecord (= 5.2.4.5)
@@ -163,7 +161,6 @@ PLATFORMS
   x64-mingw32
 
 DEPENDENCIES
-  activerecord-import
   bootsnap (>= 1.1.0)
   byebug
   colorize
