@@ -1,0 +1,2 @@
+class UfoHotspot < ApplicationRecord
+end

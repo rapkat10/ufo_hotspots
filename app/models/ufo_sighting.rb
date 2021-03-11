@@ -1,0 +1,2 @@
+class UfoSighting < ApplicationRecord
+end
